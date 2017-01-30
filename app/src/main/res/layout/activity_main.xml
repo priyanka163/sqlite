@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.bridgelabz.sqlitecontacts.MainActivity">
+
+
+    <Button
+        android:text="Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/button_delete" />
+
+
+<EditText
+    android:id="@+id/edit_delete"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="id"
+    android:layout_toRightOf="@id/button_delete"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:id="@+id/Edit_ADd"
+        android:layout_below="@id/button_delete"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Number"
+        android:id="@+id/Edit_Number"
+
+
+        android:layout_below="@id/Edit_ADd"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Edit_ADd"
+        android:text="add"
+        android:layout_toRightOf="@id/Edit_Number"
+        android:id="@+id/Button_Add"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showAll"
+        android:text="ShowAll"
+        android:layout_below="@id/Edit_Number"
+        />
+
+</RelativeLayout>
